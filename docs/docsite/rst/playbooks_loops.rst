@@ -673,7 +673,7 @@ As of Ansible 2.1, the `loop_control` option can be used to specify the name of 
 
 .. versionadded:: 2.2
 
-When using complex data structures for looping the display might get a bit too "busy", this is where the C(label) directive comes to help::
+When using complex data structures for looping the display might get a bit too "busy", this is where the ``label`` directive comes to help::
 
     - name: create servers
       digital_ocean:
@@ -694,7 +694,7 @@ This will now display just the 'label' field instead of the whole structure per 
 
 .. versionadded:: 2.2
 
-Another option to loop control is C(pause), which allows you to control the time (in seconds) between execution of items in a task loop.::
+Another option to loop control is ``pause``, which allows you to control the time (in seconds) between execution of items in a task loop.::
 
     # main.yml
     - name: create servers, pause 3s before creating next
